@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    color: white;
+    font-size: 100px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 50px;
+    border-bottom: 10px solid #1c1c1c;
+} 
+
+.buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.mainStartbtn{
+    border-radius: 50%;
+    border: 50% solid #023a01;
+    padding: 15px;
+}
+
+.startBtn{
+    background-color: #16b313;
+    color: #176427;
+    border: none;
+}
+
+.mainlapBtn{
+    border-radius: 50%;
+    border: 5px solid #1C1C1E;
+    padding: 10px;
+}
+
+.lapResetBtn{
+    background-color: #1C1C1E;
+    color: white;
+    border: none;
+}
