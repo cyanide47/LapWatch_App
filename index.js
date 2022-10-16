@@ -19,6 +19,9 @@ let int = null;
 
 let isTimerStarted = false;
 
+let allLaps = [];
+let lapsNumber = 1;
+
 startBtn.addEventListener('click', () => {
     if(isTimerStarted === false) {
         int = setInterval(displayTimer, 10);
@@ -71,3 +74,19 @@ function checkIsResetAvailable(){
         lapResetBtn.innerHTML = "Lap";
     }
 }
+
+lapResetBtn.addEventListener('click', () => {
+    if(isTimerStarted === false){ // Reset Click
+        clearInterval(int);
+        m = 0;
+        s = 0;
+        ms = 0;
+
+        milisec = 0;
+        sec = 0;
+        min = 0;
+        time.innerHTML = "00:00:00";
+    }else{ // Lap Click
+
+    }
+})
