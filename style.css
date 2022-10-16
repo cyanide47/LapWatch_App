@@ -39,8 +39,8 @@ body {
 
 .mainStartBtn{
     border-radius: 50%;
-    border: 50% solid #023a01;
-    padding: 15px;
+    border: 5px solid #023a01;
+    padding: 10px;
 }
 
 .startBtn{
@@ -70,5 +70,4 @@ body {
 .timerStartedMain{
     border: 5px solid #340C00;
     
-
 }

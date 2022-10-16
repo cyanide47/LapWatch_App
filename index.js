@@ -26,6 +26,7 @@ startBtn.addEventListener('click', () => {
         clearInterval(int);
     }
     changeStartBtn();
+    checkIsResetAvailable();
 })
 
 function displayTimer(){
@@ -60,5 +61,13 @@ function changeStartBtn() {
         startBtn.innerHTML = "Start";
         startBtn.classList.remove("timerStarted");
         mainStartBtn.classList.remove("timerStartedMain");
+    }
+}
+
+function checkIsResetAvailable(){
+    if(isTimerStarted === false){
+        lapResetBtn.innerHTML = "Reset";
+    }else{
+        lapResetBtn.innerHTML = "Lap";
     }
 }
