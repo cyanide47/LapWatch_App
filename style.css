@@ -37,7 +37,7 @@ body {
     font-size: 30px;
 }
 
-.mainStartbtn{
+.mainStartBtn{
     border-radius: 50%;
     border: 50% solid #023a01;
     padding: 15px;
@@ -59,4 +59,16 @@ body {
     background-color: #1C1C1E;
     color: white;
     border: none;
+}
+
+.timerStarted{
+    background-color: #340E0B;
+    color: #BC3D43;
+
+}
+
+.timerStartedMain{
+    border: 5px solid #340C00;
+    
+
 }

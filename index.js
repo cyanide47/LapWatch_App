@@ -1,5 +1,5 @@
 const startBtn = document.querySelector('.startBtn');
-const mainStartBtn = document.querySelector('.mainStartbtn');
+const mainStartBtn = document.querySelector('.mainStartBtn'); 
 
 const lapResetBtn = document.querySelector('.lapResetBtn');
 const mainLapBtn = document.querySelector('.mainlapBtn');
@@ -25,6 +25,7 @@ startBtn.addEventListener('click', () => {
     }else {
         clearInterval(int);
     }
+    changeStartBtn();
 })
 
 function displayTimer(){
@@ -44,4 +45,20 @@ function displayTimer(){
     ms = milisec < 10 ? "0" + milisec : milisec;
 
     time.innerHTML = `${m}:${s}:${ms}`;
+}
+
+function changeStartBtn() {
+    if(isTimerStarted === false){
+        isTimerStarted = true;
+
+        startBtn.innerHTML = "Stop";
+        startBtn.classList.add("timerStarted");
+        mainStartBtn.classList.add("timerStartedMain");
+    }else {
+        isTimerStarted = false;
+
+        startBtn.innerHTML = "Start";
+        startBtn.classList.remove("timerStarted");
+        mainStartBtn.classList.remove("timerStartedMain");
+    }
 }
