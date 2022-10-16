@@ -75,6 +75,22 @@ function checkIsResetAvailable(){
     }
 }
 
+function displayLaps() {
+    lapsNumber++;
+    laps.innerHTML = "";
+    if(allLaps.length > 0){
+        allLaps.map(item => {
+            laps.innerHTML +=`
+                <div class = "lap">
+                    <span>Lap ${item.number}</span>
+                    <span>${item.time}</span>
+                </div>
+            
+            `
+        })
+    }
+}
+
 lapResetBtn.addEventListener('click', () => {
     if(isTimerStarted === false){ // Reset Click
         clearInterval(int);
@@ -86,7 +102,20 @@ lapResetBtn.addEventListener('click', () => {
         sec = 0;
         min = 0;
         time.innerHTML = "00:00:00";
-    }else{ // Lap Click
 
+        allLaps = [];
+        laps.innerHTML = "";
+        lapsNumber = 1;
+
+
+    }else{ // Lap Click
+        allLaps.push(
+            {
+                time: m + ":" + s + ":" + ms,
+                number: lapsNumber,
+            }
+        )
+        displayLaps();
+        console.log(allLaps);
     }
 })
