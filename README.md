@@ -1,5 +1,5 @@
 # Programmation
-Ce code est un exemple de Chronomètre en HTML.
+Ce code est un exemple de Chronomètre en HTML et JavaScript..
 
 Via le boutton Start vous pouvez démarrer celui-ci
 Via le bouton Laps vous pouvez prendre le temps de manière instantanée
