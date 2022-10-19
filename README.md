@@ -1,4 +1,4 @@
-# Programmation
+# LapWatch Application
 Ce code est un exemple de Chronomètre en HTML et JavaScript..
 
 Via le boutton Start vous pouvez démarrer celui-ci
